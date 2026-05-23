@@ -1,0 +1,3095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rashmi Jain — Mental Health Counselling, Yoga Therapy & Mindful Living</title>
+<meta name="description" content="A grounded mental wellness and yoga therapy practice led by Rashmi Jain — helping individuals, students and organisations return to stillness, strength and self.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,500&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<style>
+/* ============================================================
+   RASHMI JAIN — MENTAL HEALTH & YOGA · EDITORIAL WELLNESS
+   Palette: warm cream · deep sage · terracotta clay · saffron
+   Type:    Fraunces (display serif) + DM Sans (body)
+   ============================================================ */
+
+:root{
+  /* Brand — sage + clay */
+  --sage: #5B6F4F;
+  --sage-deep: #3D4D33;
+  --sage-soft: #A8B89A;
+  --sage-mist: #D4DCC9;
+  --sage-shadow: #2A3622;
+
+  --clay: #C97B5C;
+  --clay-deep: #A45F44;
+  --saffron: #D4A574;
+  --rose: #C89B92;
+
+  --brand-grad: linear-gradient(to right, #3D4D33 0%, #5B6F4F 100%);
+  --brand-grad-soft: linear-gradient(135deg, #3D4D33 0%, #5B6F4F 55%, #A8B89A 100%);
+  --clay-grad: linear-gradient(135deg, #C97B5C 0%, #D4A574 100%);
+
+  /* Ink */
+  --ink: #2D2A24;
+  --ink-2: #1F1D19;
+  --ink-3: #3F3A32;
+  --ink-soft: #5C5347;
+  --ink-mute: #8B8275;
+
+  /* Paper / surface */
+  --paper: #F5EFE3;
+  --paper-2: #EBE3D0;
+  --paper-3: #E1D7BF;
+  --cream: #FAF6EC;
+  --bone: #F0E9D9;
+
+  --line: rgba(45,42,36,0.12);
+  --line-soft: rgba(45,42,36,0.07);
+  --line-light: rgba(255,255,255,0.14);
+
+  /* Type */
+  --f-display: "Fraunces", "Cormorant Garamond", Georgia, serif;
+  --f-body: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Layout */
+  --container: 1320px;
+  --pad-x: clamp(20px, 4vw, 56px);
+
+  /* Radius */
+  --r-sm: 8px;
+  --r: 16px;
+  --r-lg: 24px;
+  --r-xl: 36px;
+
+  /* Shadow — warm */
+  --sh-1: 0 1px 2px rgba(45,42,36,0.05), 0 1px 1px rgba(45,42,36,0.04);
+  --sh-2: 0 8px 24px rgba(61,77,51,0.10), 0 2px 6px rgba(45,42,36,0.05);
+  --sh-3: 0 24px 60px -12px rgba(61,77,51,0.22), 0 8px 16px -6px rgba(45,42,36,0.10);
+  --sh-4: 0 40px 100px -24px rgba(61,77,51,0.35);
+  --sh-clay: 0 16px 40px -8px rgba(201,123,92,0.45);
+
+  /* Ease */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Reset */
+*,*::before,*::after{ box-sizing: border-box; }
+*{ margin: 0; padding: 0; }
+html{ scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body{
+  font-family: var(--f-body);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  font-feature-settings: "ss01", "ss02";
+}
+img{ max-width: 100%; display: block; }
+button{ font: inherit; cursor: pointer; border: 0; background: none; color: inherit; }
+input,select,textarea{ font: inherit; color: inherit; }
+a{ color: inherit; text-decoration: none; }
+
+.container{ max-width: var(--container); margin: 0 auto; padding: 0 var(--pad-x); }
+
+/* ---- Type ---- */
+.eyebrow{
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+}
+.eyebrow::before{
+  content: "";
+  width: 28px; height: 1px;
+  background: currentColor;
+  opacity: 0.55;
+}
+.eyebrow.light{ color: rgba(255,255,255,0.65); }
+.eyebrow.gold{ color: var(--saffron); }
+.eyebrow.clay{ color: var(--clay); }
+
+h1,h2,h3,h4{
+  font-family: var(--f-display);
+  font-weight: 400;
+  color: var(--ink);
+  letter-spacing: -0.018em;
+  line-height: 1.08;
+  font-variation-settings: "opsz" 120, "SOFT" 50;
+}
+h1{
+  font-size: clamp(46px, 7vw, 96px);
+  font-weight: 350;
+}
+h2{
+  font-size: clamp(36px, 5vw, 68px);
+  font-weight: 350;
+  color: var(--ink);
+}
+h3{
+  font-size: clamp(22px, 2.4vw, 30px);
+  font-weight: 450;
+  color: var(--ink);
+}
+
+p{ color: var(--ink-soft); }
+.lead{ font-size: 18px; line-height: 1.65; color: var(--ink-soft); }
+
+em, .italic{
+  font-style: italic;
+  font-family: var(--f-display);
+  font-weight: 350;
+}
+
+/* ---- Buttons ---- */
+.btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 28px;
+  border-radius: 999px;
+  font-family: var(--f-body);
+  font-weight: 500;
+  font-size: 14.5px;
+  letter-spacing: 0.005em;
+  transition: all 0.4s var(--ease-out);
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.btn svg{ width: 16px; height: 16px; transition: transform 0.4s var(--ease-out); }
+.btn:hover svg{ transform: translateX(4px); }
+
+.btn-primary{ background: var(--sage-deep); color: var(--cream); }
+.btn-primary:hover{ background: var(--sage-shadow); transform: translateY(-2px); box-shadow: var(--sh-3); }
+
+.btn-clay{ background: var(--clay); color: #fff; }
+.btn-clay:hover{ background: var(--clay-deep); transform: translateY(-2px); box-shadow: var(--sh-clay); }
+
+.btn-saffron{ background: var(--saffron); color: var(--ink); }
+.btn-saffron:hover{ filter: brightness(1.05); transform: translateY(-2px); box-shadow: 0 16px 40px -8px rgba(212,165,116,0.55); }
+
+.btn-ghost{ background: transparent; color: var(--ink); border-color: var(--line); }
+.btn-ghost:hover{ background: var(--sage-deep); color: var(--cream); border-color: transparent; }
+
+.btn-glass{
+  background: rgba(245,239,227,0.10);
+  color: #fff;
+  border: 1px solid rgba(245,239,227,0.22);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.btn-glass:hover{ background: rgba(245,239,227,0.18); border-color: rgba(245,239,227,0.35); }
+
+.btn-light{ background: var(--cream); color: var(--ink); }
+.btn-light:hover{ background: var(--saffron); transform: translateY(-2px); }
+
+/* Reveal */
+[data-reveal]{
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 1s var(--ease-out), transform 1s var(--ease-out);
+  transition-delay: var(--d, 0ms);
+}
+[data-reveal].in{ opacity: 1; transform: none; }
+
+/* ============================================================
+   TOPBAR + NAV
+   ============================================================ */
+.topbar{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 60;
+  padding: 9px 0;
+  background: rgba(31,29,25,0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(245,239,227,0.7);
+  border-bottom: 1px solid rgba(245,239,227,0.08);
+  transition: all 0.4s var(--ease);
+}
+.topbar-inner{ display: flex; align-items: center; justify-content: space-between; }
+.topbar-left{ display: flex; gap: 24px; align-items: center; }
+.topbar-left .dot{
+  display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--saffron); margin-right: 8px; vertical-align: middle;
+  box-shadow: 0 0 12px rgba(212,165,116,0.6);
+}
+.topbar-right{ display: flex; gap: 22px; align-items: center; }
+.topbar a{ transition: color 0.3s var(--ease); }
+.topbar a:hover{ color: var(--saffron); }
+@media (max-width: 768px){
+  .topbar .hide-mobile{ display: none; }
+}
+
+#nav{
+  position: fixed;
+  top: 38px; left: 0; right: 0;
+  z-index: 50;
+  padding: 18px 0;
+  background: transparent;
+  transition: all 0.5s var(--ease);
+}
+#nav.scrolled{
+  top: 0;
+  background: rgba(31,29,25,0.82);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(245,239,227,0.08);
+  box-shadow: 0 10px 40px -10px rgba(0,0,0,0.45);
+}
+.nav-inner{
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 24px;
+}
+.brand-logo{
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--cream);
+}
+.brand-mark{
+  width: 44px; height: 44px;
+  flex: 0 0 44px;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.brand-name{
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.005em;
+  line-height: 1;
+  color: var(--cream);
+  font-variation-settings: "opsz" 30;
+}
+.brand-name .sub{
+  display: block;
+  font-family: var(--f-mono);
+  font-size: 9px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  margin-top: 5px;
+  color: rgba(245,239,227,0.55);
+  font-weight: 500;
+}
+
+.nav-links{
+  display: flex; gap: 30px; align-items: center;
+  font-size: 14.5px;
+  font-weight: 400;
+  color: rgba(245,239,227,0.78);
+}
+.nav-links a{
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.3s var(--ease);
+}
+.nav-links a::after{
+  content: "";
+  position: absolute;
+  bottom: -2px; left: 0; right: 0;
+  height: 1px;
+  background: var(--saffron);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease-out);
+}
+.nav-links a:hover, .nav-links a.active{ color: var(--cream); }
+.nav-links a:hover::after, .nav-links a.active::after{ transform: scaleX(1); }
+@media (max-width: 1024px){ .nav-links{ display: none; } }
+
+.nav-cta{ display: flex; align-items: center; gap: 12px; }
+.menu-toggle{
+  width: 44px; height: 44px;
+  display: none;
+  align-items: center; justify-content: center;
+  color: var(--cream);
+  border: 1px solid rgba(245,239,227,0.18);
+  border-radius: 999px;
+}
+.menu-toggle svg{ width: 18px; height: 18px; }
+@media (max-width: 1024px){ .menu-toggle{ display: inline-flex; } }
+
+/* ---- Mobile drawer ---- */
+#mobile-drawer{
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  background: var(--ink-2);
+  color: var(--cream);
+  transform: translateX(100%);
+  transition: transform 0.5s var(--ease-out);
+  display: flex;
+  flex-direction: column;
+}
+#mobile-drawer.open{ transform: translateX(0); }
+.drawer-inner{ display: flex; flex-direction: column; height: 100%; padding: 24px var(--pad-x); }
+.drawer-top{ display: flex; align-items: center; justify-content: space-between; }
+.drawer-close{
+  width: 44px; height: 44px;
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--cream);
+  border: 1px solid rgba(245,239,227,0.2);
+  border-radius: 999px;
+}
+.drawer-links{
+  margin-top: auto; margin-bottom: auto;
+  display: flex; flex-direction: column; gap: 16px;
+  font-family: var(--f-display);
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+}
+.drawer-links a{
+  display: block;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(245,239,227,0.08);
+}
+.drawer-foot{ display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 24px; }
+.drawer-meta{ font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(245,239,227,0.5); display: flex; gap: 16px; }
+
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{
+  position: relative;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: 180px 0 100px;
+  color: var(--cream);
+  overflow: hidden;
+  isolation: isolate;
+}
+.hero-bg{
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  background:
+    linear-gradient(180deg, rgba(31,29,25,0.55) 0%, rgba(31,29,25,0.35) 40%, rgba(31,29,25,0.85) 100%),
+    url("https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&fit=crop&w=2400&q=85") center/cover no-repeat;
+}
+.hero-overlay{
+  position: absolute; inset: 0; z-index: -2;
+  background:
+    radial-gradient(60% 80% at 70% 35%, rgba(212,165,116,0.10), transparent 60%),
+    radial-gradient(50% 60% at 20% 60%, rgba(91,111,79,0.18), transparent 70%);
+  mix-blend-mode: screen;
+}
+.hero-grid{
+  position: absolute; inset: 0; z-index: -2;
+  background-image:
+    linear-gradient(rgba(245,239,227,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245,239,227,0.04) 1px, transparent 1px);
+  background-size: 80px 80px;
+  opacity: 0.5;
+}
+.hero-vignette{
+  position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(to bottom, transparent 0%, transparent 60%, rgba(31,29,25,0.55) 100%);
+}
+.hero-mega-word{
+  position: absolute;
+  bottom: -8vw;
+  left: -1vw;
+  font-family: var(--f-display);
+  font-size: clamp(180px, 28vw, 460px);
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(245,239,227,0.05);
+  line-height: 0.85;
+  z-index: -1;
+  pointer-events: none;
+  letter-spacing: -0.04em;
+  user-select: none;
+  font-variation-settings: "opsz" 144;
+}
+
+/* Floating ornament marks */
+.orn{
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.85;
+  animation: floaty 8s ease-in-out infinite;
+}
+.orn-1{ top: 14%; right: 8%; width: 80px; height: 80px; animation-delay: 0s; }
+.orn-2{ top: 60%; left: 5%; width: 64px; height: 64px; animation-delay: 1.5s; }
+.orn-3{ top: 30%; left: 8%; width: 48px; height: 48px; animation-delay: 3s; }
+@keyframes floaty{
+  0%,100%{ transform: translateY(0) rotate(0); }
+  50%{ transform: translateY(-16px) rotate(4deg); }
+}
+
+.hero-inner{ position: relative; z-index: 2; }
+.hero-grid-layout{
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 70px;
+  align-items: center;
+}
+@media (max-width: 1024px){
+  .hero-grid-layout{ grid-template-columns: 1fr; gap: 50px; }
+}
+
+.hero-eyebrow{
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(245,239,227,0.75);
+  padding: 9px 20px;
+  border: 1px solid rgba(245,239,227,0.18);
+  border-radius: 999px;
+  background: rgba(245,239,227,0.04);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  margin-bottom: 32px;
+}
+.pulse{
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--saffron);
+  box-shadow: 0 0 16px rgba(212,165,116,0.7);
+  position: relative;
+}
+.pulse::after{
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 1px solid var(--saffron);
+  animation: pulseRing 2.4s ease-out infinite;
+}
+@keyframes pulseRing{
+  0%{ transform: scale(0.8); opacity: 1; }
+  100%{ transform: scale(1.8); opacity: 0; }
+}
+
+.hero h1{
+  color: var(--cream);
+  font-weight: 320;
+  letter-spacing: -0.022em;
+  margin-bottom: 28px;
+}
+.hero h1 .accent{
+  font-style: italic;
+  color: var(--saffron);
+  font-weight: 350;
+  position: relative;
+}
+.hero h1 .dot{ color: var(--clay); font-style: normal; }
+
+.hero-sub{
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(245,239,227,0.82);
+  max-width: 560px;
+  margin-bottom: 40px;
+}
+.hero-sub strong{ color: var(--cream); font-weight: 500; }
+
+.hero-cta{ display: flex; gap: 14px; flex-wrap: wrap; }
+
+/* Founder card on right side of hero */
+.hero-side{ position: relative; }
+.founder-card{
+  position: relative;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: var(--sh-4);
+  aspect-ratio: 4/5;
+  background: var(--ink-2);
+  isolation: isolate;
+}
+.founder-card img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+  filter: contrast(1.02) saturate(0.95);
+}
+.founder-card::before{
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, rgba(31,29,25,0.92) 100%);
+  z-index: 1;
+}
+.quote-strip{
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 26px 28px 28px;
+  color: var(--cream);
+  z-index: 2;
+}
+.quote-strip .q{
+  font-family: var(--f-display);
+  font-size: 19px;
+  font-style: italic;
+  line-height: 1.4;
+  font-weight: 350;
+  margin-bottom: 12px;
+  letter-spacing: -0.005em;
+}
+.quote-strip .by{
+  font-family: var(--f-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(245,239,227,0.7);
+}
+.quote-strip .by .div{ margin: 0 10px; color: var(--saffron); }
+
+.stat-float{
+  position: absolute;
+  top: -28px; left: -32px;
+  background: var(--cream);
+  color: var(--ink);
+  padding: 18px 24px;
+  border-radius: var(--r);
+  box-shadow: var(--sh-3);
+  z-index: 3;
+}
+.stat-float .num{
+  font-family: var(--f-display);
+  font-size: 36px;
+  font-weight: 350;
+  line-height: 1;
+  color: var(--sage-deep);
+}
+.stat-float .num sup{ font-size: 0.5em; color: var(--clay); }
+.stat-float .lbl{
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-top: 4px;
+}
+
+.badge-float{
+  position: absolute;
+  bottom: 40px; right: -30px;
+  background: var(--cream);
+  color: var(--ink);
+  padding: 16px 20px;
+  border-radius: var(--r);
+  display: flex; align-items: center; gap: 14px;
+  box-shadow: var(--sh-3);
+  max-width: 290px;
+  z-index: 3;
+}
+.badge-float .ic{
+  width: 42px; height: 42px;
+  flex: 0 0 42px;
+  border-radius: 50%;
+  background: var(--clay-grad);
+  color: #fff;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.badge-float .ic svg{ width: 20px; height: 20px; }
+.badge-float .t{
+  font-family: var(--f-display);
+  font-size: 15px;
+  font-weight: 450;
+  line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+.badge-float .s{
+  font-size: 11.5px;
+  color: var(--ink-mute);
+  line-height: 1.4;
+}
+
+@media (max-width: 1024px){
+  .stat-float{ left: -8px; top: -22px; padding: 14px 18px; }
+  .stat-float .num{ font-size: 28px; }
+  .badge-float{ right: -8px; bottom: 16px; }
+}
+
+.scroll-cue{
+  position: absolute;
+  bottom: 30px; left: 50%;
+  transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(245,239,227,0.55);
+  z-index: 2;
+}
+.scroll-cue .line{
+  width: 1px; height: 50px;
+  background: linear-gradient(to bottom, rgba(245,239,227,0.5), transparent);
+  position: relative;
+  overflow: hidden;
+}
+.scroll-cue .line::after{
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 14px;
+  background: var(--saffron);
+  animation: scrollDrop 2.4s ease-in-out infinite;
+}
+@keyframes scrollDrop{
+  0%{ transform: translateY(-100%); }
+  100%{ transform: translateY(400%); }
+}
+
+/* ============================================================
+   TRUST STRIP
+   ============================================================ */
+.trust-strip{
+  background: var(--paper-2);
+  padding: 40px 0;
+  border-bottom: 1px solid var(--line);
+}
+.trust-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.trust-item{
+  text-align: center;
+  position: relative;
+}
+.trust-item + .trust-item::before{
+  content: "";
+  position: absolute;
+  left: 0; top: 50%;
+  width: 1px; height: 60%;
+  transform: translateY(-50%);
+  background: var(--line);
+}
+.trust-item .num{
+  font-family: var(--f-display);
+  font-size: clamp(36px, 4.5vw, 56px);
+  font-weight: 320;
+  color: var(--sage-deep);
+  line-height: 1;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+.trust-item .lbl{
+  font-family: var(--f-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  line-height: 1.5;
+}
+@media (max-width: 720px){
+  .trust-grid{ grid-template-columns: repeat(2, 1fr); gap: 32px; }
+  .trust-item + .trust-item::before{ display: none; }
+}
+
+/* ============================================================
+   SECTIONS — base
+   ============================================================ */
+.sec{
+  padding: clamp(80px, 10vw, 140px) 0;
+  position: relative;
+}
+.sec.alt{ background: var(--paper-2); }
+.sec.dark{ background: var(--sage-deep); color: var(--cream); }
+.sec.dark p{ color: rgba(245,239,227,0.78); }
+.sec.dark h2, .sec.dark h3{ color: var(--cream); }
+
+.sec-head{
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 60px;
+  align-items: end;
+  margin-bottom: 70px;
+}
+.sec-head .eyebrow{ margin-bottom: 18px; }
+.sec-head .right{
+  font-size: 16px;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+@media (max-width: 768px){
+  .sec-head{ grid-template-columns: 1fr; gap: 24px; margin-bottom: 50px; }
+}
+
+
+/* ============================================================
+   AUDIENCE TABS
+   ============================================================ */
+.audience{ background: var(--cream); }
+.tabs-rail{
+  display: flex; gap: 6px;
+  background: var(--paper-2);
+  padding: 6px;
+  border-radius: 999px;
+  margin-bottom: 60px;
+  width: max-content;
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+}
+.tab{
+  padding: 13px 24px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  transition: all 0.4s var(--ease);
+  white-space: nowrap;
+  font-family: var(--f-body);
+}
+.tab.active{ background: var(--sage-deep); color: var(--cream); box-shadow: var(--sh-2); }
+.tab:not(.active):hover{ color: var(--ink); }
+
+.panels{ position: relative; }
+.panel{
+  display: none;
+  grid-template-columns: 1fr 0.95fr;
+  gap: 70px;
+  align-items: center;
+}
+.panel.active{ display: grid; }
+@media (max-width: 900px){ .panel{ grid-template-columns: 1fr; gap: 40px; } }
+
+.panel-img{
+  position: relative;
+  aspect-ratio: 5/4;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  background: var(--paper-3);
+  box-shadow: var(--sh-3);
+}
+.panel-img img{ width: 100%; height: 100%; object-fit: cover; }
+.panel-img::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, transparent 60%, rgba(61,77,51,0.18));
+}
+.panel-img .corner{
+  position: absolute;
+  top: 16px; left: 16px;
+  background: rgba(31,29,25,0.7);
+  color: var(--cream);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+  z-index: 2;
+}
+
+.panel-body h3{ margin-bottom: 18px; font-size: clamp(28px, 3.5vw, 44px); font-weight: 380; }
+.panel-body h3 em{ color: var(--clay); }
+.panel-body p{ font-size: 17px; line-height: 1.75; color: var(--ink-soft); margin-bottom: 28px; }
+.panel-list{ list-style: none; margin-bottom: 36px; }
+.panel-list li{
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line-soft);
+  font-size: 15.5px;
+  color: var(--ink);
+  line-height: 1.5;
+}
+.panel-list li::before{
+  content: "";
+  width: 20px; height: 20px;
+  flex: 0 0 20px;
+  margin-top: 2px;
+  border-radius: 50%;
+  background: var(--sage-mist);
+  position: relative;
+}
+.panel-list li::after{
+  content: "";
+  position: absolute;
+  width: 6px; height: 3px;
+  border-left: 1.5px solid var(--sage-deep);
+  border-bottom: 1.5px solid var(--sage-deep);
+  transform: rotate(-45deg) translate(7px, -1px);
+}
+.panel-list li{ position: relative; }
+
+/* ============================================================
+   SERVICES — pinned horizontal scroll
+   ============================================================ */
+.services{
+  background: var(--sage-deep);
+  color: var(--cream);
+  overflow: hidden;
+  position: relative;
+}
+.services::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(50% 50% at 80% 20%, rgba(212,165,116,0.10), transparent 70%),
+    radial-gradient(40% 40% at 10% 70%, rgba(201,123,92,0.10), transparent 70%);
+  pointer-events: none;
+}
+.services-pin{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.services-track{
+  display: flex;
+  gap: 36px;
+  align-items: center;
+  padding: 0 var(--pad-x);
+  will-change: transform;
+}
+
+.svc-intro{
+  flex: 0 0 clamp(420px, 38vw, 560px);
+  padding-right: 30px;
+  border-right: 1px solid rgba(245,239,227,0.12);
+  padding-top: 20px;
+}
+.svc-intro .eyebrow{ color: var(--saffron); margin-bottom: 22px; }
+.svc-intro h2{ color: var(--cream); margin-bottom: 22px; font-weight: 350; }
+.svc-intro p{ color: rgba(245,239,227,0.78); font-size: 17px; line-height: 1.7; }
+
+.svc-card{
+  flex: 0 0 clamp(380px, 30vw, 460px);
+  height: 70vh;
+  max-height: 620px;
+  background: var(--ink);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+  box-shadow: var(--sh-4);
+  transition: transform 0.5s var(--ease-out);
+}
+.svc-card:hover{ transform: translateY(-8px); }
+.svc-card img{
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(0.55) saturate(0.95);
+  transition: transform 0.8s var(--ease-out), filter 0.6s var(--ease-out);
+}
+.svc-card:hover img{ transform: scale(1.05); filter: brightness(0.62) saturate(1); }
+.svc-card::before{
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 30%, rgba(31,29,25,0.85) 100%);
+  z-index: 1;
+}
+.svc-card .roman{
+  position: absolute;
+  top: 24px; left: 28px;
+  font-family: var(--f-display);
+  font-size: 22px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--saffron);
+  letter-spacing: 0.05em;
+  z-index: 2;
+}
+.svc-card .content{
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 36px 32px 34px;
+  color: var(--cream);
+  z-index: 2;
+}
+.svc-card .tag{
+  display: inline-block;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--saffron);
+  margin-bottom: 16px;
+  padding: 6px 12px;
+  border: 1px solid rgba(212,165,116,0.4);
+  border-radius: 999px;
+}
+.svc-card h3{
+  color: var(--cream);
+  font-weight: 380;
+  margin-bottom: 16px;
+  font-size: clamp(26px, 2.6vw, 36px);
+  letter-spacing: -0.015em;
+}
+.svc-card .desc{
+  color: rgba(245,239,227,0.82);
+  font-size: 14.5px;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+.svc-card .pills{
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin-bottom: 22px;
+}
+.svc-card .pills span{
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(245,239,227,0.10);
+  border: 1px solid rgba(245,239,227,0.18);
+  color: rgba(245,239,227,0.85);
+}
+.svc-card .explore{
+  display: inline-flex; align-items: center; gap: 10px;
+  color: var(--saffron);
+  font-size: 13.5px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding-top: 14px;
+  border-top: 1px solid rgba(245,239,227,0.14);
+  transition: color 0.3s var(--ease);
+}
+.svc-card .explore svg{ width: 14px; height: 14px; transition: transform 0.4s var(--ease-out); }
+.svc-card .explore:hover{ color: var(--cream); }
+.svc-card .explore:hover svg{ transform: translateX(4px); }
+
+.svc-progress-wrap{
+  position: absolute;
+  bottom: 36px; left: 50%;
+  transform: translateX(-50%);
+  display: flex; align-items: center; gap: 16px;
+  z-index: 4;
+}
+.svc-progress{
+  width: 140px;
+  height: 2px;
+  background: rgba(245,239,227,0.16);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.svc-progress .bar{
+  height: 100%;
+  width: 8%;
+  background: var(--saffron);
+  border-radius: 2px;
+  transition: width 0.2s linear;
+}
+.svc-counter{
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(245,239,227,0.7);
+}
+
+@media (max-width: 1024px){
+  .services-pin{ height: auto; padding: 80px 0; }
+  .services-track{ flex-direction: column; padding: 0 var(--pad-x); }
+  .svc-card{ width: 100%; flex: 0 0 auto; height: auto; min-height: 540px; }
+  .svc-intro{ flex: 0 0 auto; border-right: 0; padding-right: 0; padding-bottom: 30px; }
+  .svc-progress-wrap{ display: none; }
+}
+
+/* ============================================================
+   FOUNDER
+   ============================================================ */
+.founder-sec{ background: var(--paper); }
+.founder-grid{
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+  align-items: center;
+}
+@media (max-width: 1024px){ .founder-grid{ grid-template-columns: 1fr; gap: 50px; } }
+
+.founder-img-wrap{
+  position: relative;
+}
+.founder-img-wrap > img{
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  border-radius: var(--r-lg);
+  box-shadow: var(--sh-3);
+}
+.founder-img-wrap::before{
+  content: "";
+  position: absolute;
+  inset: -16px -16px 30px 30px;
+  border: 1px solid var(--clay);
+  border-radius: var(--r-lg);
+  z-index: -1;
+}
+.creds{
+  position: absolute;
+  bottom: -36px; right: -16px;
+  background: var(--cream);
+  padding: 20px 22px;
+  border-radius: var(--r);
+  box-shadow: var(--sh-3);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 22px;
+  max-width: 360px;
+}
+.creds .c{
+  font-size: 11px;
+  color: var(--ink-mute);
+  line-height: 1.45;
+}
+.creds .c strong{
+  display: block;
+  font-family: var(--f-display);
+  font-size: 16px;
+  font-weight: 450;
+  color: var(--sage-deep);
+  margin-bottom: 2px;
+  letter-spacing: -0.005em;
+}
+@media (max-width: 600px){
+  .creds{ position: static; margin-top: 28px; max-width: 100%; }
+}
+
+.founder-body .eyebrow{ margin-bottom: 18px; }
+.founder-body h2{ margin-bottom: 28px; font-weight: 350; }
+.founder-body h2 em{ color: var(--clay); }
+.founder-body p{
+  font-size: 17px;
+  line-height: 1.75;
+  margin-bottom: 22px;
+  color: var(--ink-soft);
+}
+.pull{
+  font-family: var(--f-display);
+  font-style: italic;
+  font-size: clamp(22px, 2.4vw, 30px);
+  font-weight: 350;
+  line-height: 1.35;
+  color: var(--sage-deep);
+  border-left: 2px solid var(--clay);
+  padding: 4px 0 4px 24px;
+  margin: 32px 0;
+  letter-spacing: -0.005em;
+}
+.sig{
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-family: var(--f-mono);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.sig strong{ color: var(--sage-deep); font-weight: 500; }
+
+/* ============================================================
+   METHOD — 4 steps
+   ============================================================ */
+.method{ background: var(--paper-2); }
+.method-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--line);
+}
+@media (max-width: 900px){ .method-grid{ grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 540px){ .method-grid{ grid-template-columns: 1fr; } }
+
+.step{
+  padding: 40px 28px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  position: relative;
+  transition: background 0.4s var(--ease);
+}
+.step:hover{ background: var(--cream); }
+.step:last-child{ border-right: 0; }
+@media (max-width: 900px){
+  .step:nth-child(2){ border-right: 0; }
+}
+.stepnum{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+.stepnum span:first-child{
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--clay);
+}
+.stepnum .duration{
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+}
+.step h3{ margin-bottom: 14px; font-size: 22px; font-weight: 450; }
+.step p{ font-size: 14.5px; line-height: 1.65; color: var(--ink-soft); }
+
+
+/* ============================================================
+   TESTIMONIALS — slider
+   ============================================================ */
+.tests{
+  background: var(--sage-shadow);
+  color: var(--cream);
+  overflow: hidden;
+  position: relative;
+}
+.tests::before{
+  content: "";
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(40% 60% at 80% 30%, rgba(212,165,116,0.10), transparent 70%),
+    radial-gradient(40% 50% at 10% 80%, rgba(201,123,92,0.08), transparent 70%);
+  pointer-events: none;
+}
+.tests-head{
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 0.8fr;
+  gap: 40px;
+  align-items: end;
+  margin-bottom: 60px;
+  position: relative;
+}
+.tests-head .left h2{ color: var(--cream); font-weight: 350; }
+.tests-head .right{
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: rgba(245,239,227,0.78);
+  max-width: 380px;
+  padding-bottom: 8px;
+}
+.tests-controls{
+  display: flex; gap: 10px;
+  padding-bottom: 8px;
+  justify-content: flex-end;
+}
+.tests-controls button{
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(245,239,227,0.18);
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--cream);
+  background: rgba(245,239,227,0.04);
+  transition: all 0.3s var(--ease);
+}
+.tests-controls button:hover{ background: var(--saffron); color: var(--ink); border-color: var(--saffron); }
+.tests-controls button:disabled{ opacity: 0.35; cursor: not-allowed; }
+.tests-controls button svg{ width: 18px; height: 18px; }
+@media (max-width: 900px){
+  .tests-head{ grid-template-columns: 1fr; gap: 24px; }
+  .tests-controls{ justify-content: flex-start; }
+}
+
+.tests-slider{
+  position: relative;
+  overflow: hidden;
+  margin: 0 -14px;
+}
+.tests-track{
+  display: flex;
+  gap: 28px;
+  padding: 14px;
+  transition: transform 0.7s var(--ease-out);
+  will-change: transform;
+}
+.t-card{
+  flex: 0 0 calc(33.333% - 19px);
+  min-width: 0;
+  background: rgba(245,239,227,0.04);
+  border: 1px solid rgba(245,239,227,0.10);
+  border-radius: var(--r-lg);
+  padding: 36px 32px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  isolation: isolate;
+}
+.t-card::before{
+  content: "“";
+  position: absolute;
+  top: 8px; right: 22px;
+  font-family: var(--f-display);
+  font-size: 96px;
+  color: rgba(212,165,116,0.22);
+  font-style: italic;
+  line-height: 1;
+  z-index: 0;
+}
+.t-stars{
+  display: flex;
+  gap: 4px;
+  margin-bottom: 22px;
+  position: relative;
+  z-index: 1;
+}
+.t-stars svg{ width: 16px; height: 16px; color: var(--saffron); }
+.t-body{
+  font-family: var(--f-display);
+  font-size: 18px;
+  line-height: 1.55;
+  color: rgba(245,239,227,0.92);
+  font-weight: 350;
+  letter-spacing: -0.005em;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+.t-foot{
+  display: flex; align-items: center; gap: 14px;
+  padding-top: 24px;
+  margin-top: 24px;
+  border-top: 1px solid rgba(245,239,227,0.12);
+  position: relative;
+  z-index: 1;
+}
+.t-avatar{
+  width: 44px; height: 44px;
+  flex: 0 0 44px;
+  border-radius: 50%;
+  background: var(--sage-soft);
+  color: var(--sage-deep);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-family: var(--f-display);
+  font-size: 16px;
+  font-weight: 500;
+}
+.t-meta .nm{
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--cream);
+  margin-bottom: 2px;
+  letter-spacing: -0.005em;
+}
+.t-meta .rl{
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(245,239,227,0.6);
+}
+@media (max-width: 1024px){ .t-card{ flex: 0 0 calc(50% - 14px); } }
+@media (max-width: 640px){ .t-card{ flex: 0 0 calc(100% - 14px); } }
+
+.tests-dots{
+  display: flex; gap: 8px; justify-content: center;
+  margin-top: 40px;
+}
+.tdot{
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: rgba(245,239,227,0.2);
+  transition: all 0.3s var(--ease);
+  border: 0;
+  padding: 0;
+}
+.tdot.active{ background: var(--saffron); width: 24px; border-radius: 4px; }
+
+/* ============================================================
+   PARTNERS marquee
+   ============================================================ */
+.partners{ background: var(--cream); padding-top: 100px; padding-bottom: 100px; }
+.partners-head{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.partners-head .eyebrow{
+  display: inline-flex;
+  margin-bottom: 16px;
+}
+.partners-head .eyebrow::before{ display: none; }
+.partners-head h2{ margin-bottom: 16px; font-weight: 350; }
+.partners-head p{
+  max-width: 580px;
+  margin: 0 auto;
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+.marquee-wrap{
+  position: relative;
+  overflow: hidden;
+  padding: 24px 0;
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
+}
+.marquee{
+  display: flex;
+  gap: 60px;
+  animation: marquee 35s linear infinite;
+  width: max-content;
+}
+@keyframes marquee{
+  0%{ transform: translateX(0); }
+  100%{ transform: translateX(-50%); }
+}
+.logo-card{
+  flex: 0 0 auto;
+  height: 64px;
+  min-width: 160px;
+  padding: 0 24px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  font-family: var(--f-display);
+  font-weight: 450;
+  font-size: 18px;
+  color: var(--ink-soft);
+  letter-spacing: -0.005em;
+  transition: all 0.3s var(--ease);
+}
+.logo-card:hover{ color: var(--sage-deep); border-color: var(--sage-soft); transform: translateY(-2px); }
+.logo-card img{ max-height: 36px; width: auto; opacity: 0.7; filter: grayscale(1); transition: opacity 0.3s var(--ease); }
+.logo-card:hover img{ opacity: 1; filter: none; }
+
+/* ============================================================
+   CERTIFICATIONS
+   ============================================================ */
+.certs{ background: var(--paper); }
+.certs-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+}
+@media (max-width: 900px){ .certs-grid{ grid-template-columns: 1fr; } }
+
+.cert{
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--sh-2);
+  transition: all 0.5s var(--ease-out);
+}
+.cert:hover{ transform: translateY(-6px); box-shadow: var(--sh-3); }
+.cert-media{
+  position: relative;
+  aspect-ratio: 16/9;
+  background: var(--brand-grad);
+  overflow: hidden;
+}
+.cert-media img{
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  filter: brightness(0.85) saturate(0.95);
+}
+.cert .badge{
+  position: absolute;
+  top: 18px; left: 18px;
+  background: rgba(31,29,25,0.7);
+  color: var(--cream);
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+  z-index: 2;
+}
+.cert .pill{
+  position: absolute;
+  top: 18px; right: 18px;
+  background: var(--saffron);
+  color: var(--ink);
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 500;
+  z-index: 2;
+}
+.cert-body{
+  padding: 32px 32px 36px;
+}
+.cert-body h3{ margin-bottom: 14px; font-weight: 450; }
+.cert-body p{
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin-bottom: 24px;
+}
+.specs{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 24px;
+}
+.specs .s{
+  padding: 0 14px;
+  border-right: 1px solid var(--line);
+}
+.specs .s:last-child{ border-right: 0; }
+.specs .s:first-child{ padding-left: 0; }
+.specs strong{
+  display: block;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.specs span{
+  font-family: var(--f-display);
+  font-size: 16px;
+  font-weight: 450;
+  color: var(--sage-deep);
+  letter-spacing: -0.005em;
+}
+.cert-cta{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--clay);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.005em;
+  transition: color 0.3s var(--ease);
+}
+.cert-cta svg{ width: 16px; height: 16px; transition: transform 0.4s var(--ease-out); }
+.cert-cta:hover{ color: var(--clay-deep); }
+.cert-cta:hover svg{ transform: translateX(4px); }
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq{ background: var(--paper-2); }
+.faq-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  border-top: 1px solid var(--line);
+}
+.faq-item{
+  border-bottom: 1px solid var(--line);
+}
+.faq-item summary{
+  list-style: none;
+  cursor: pointer;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  font-family: var(--f-display);
+  font-size: clamp(20px, 2.2vw, 26px);
+  font-weight: 400;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  transition: color 0.3s var(--ease);
+}
+.faq-item summary::-webkit-details-marker{ display: none; }
+.faq-item summary:hover{ color: var(--sage-deep); }
+.faq-item .ic{
+  width: 38px; height: 38px;
+  flex: 0 0 38px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  color: var(--sage-deep);
+  transition: all 0.4s var(--ease-out);
+}
+.faq-item .ic svg{ width: 16px; height: 16px; }
+.faq-item[open] .ic{ background: var(--clay); color: #fff; border-color: var(--clay); transform: rotate(45deg); }
+.faq-body{
+  padding: 0 60px 30px 0;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--ink-soft);
+  max-width: 800px;
+}
+
+/* ============================================================
+   LEAD FORM
+   ============================================================ */
+.lead{
+  background: var(--sage-deep);
+  color: var(--cream);
+  position: relative;
+  overflow: hidden;
+}
+.lead::before{
+  content: "";
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(50% 60% at 80% 20%, rgba(212,165,116,0.10), transparent 65%),
+    radial-gradient(40% 50% at 20% 80%, rgba(201,123,92,0.10), transparent 70%);
+  pointer-events: none;
+}
+.lead-grid{
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 80px;
+  align-items: start;
+  position: relative;
+}
+@media (max-width: 1024px){ .lead-grid{ grid-template-columns: 1fr; gap: 50px; } }
+
+.lead-left .eyebrow{ margin-bottom: 18px; color: var(--saffron); }
+.lead-left h2{
+  color: var(--cream);
+  font-weight: 350;
+  margin-bottom: 28px;
+}
+.lead-left h2 .accent{ color: var(--saffron); font-style: italic; }
+.lead-left p{
+  color: rgba(245,239,227,0.78);
+  font-size: 17px;
+  line-height: 1.75;
+  max-width: 480px;
+  margin-bottom: 40px;
+}
+.lead-meta{ display: grid; gap: 18px; }
+.lead-meta .m{
+  display: flex; align-items: center; gap: 16px;
+  padding: 16px 20px;
+  background: rgba(245,239,227,0.05);
+  border: 1px solid rgba(245,239,227,0.10);
+  border-radius: var(--r);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.lead-meta .m .ic{
+  width: 38px; height: 38px;
+  flex: 0 0 38px;
+  border-radius: 50%;
+  background: rgba(245,239,227,0.10);
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--saffron);
+}
+.lead-meta .m .ic svg{ width: 16px; height: 16px; }
+.lead-meta .m .t{
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(245,239,227,0.55);
+  margin-bottom: 4px;
+}
+.lead-meta .m .v{
+  font-family: var(--f-display);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--cream);
+  letter-spacing: -0.005em;
+}
+
+/* Form */
+.lead-right{
+  background: var(--cream);
+  color: var(--ink);
+  border-radius: var(--r-lg);
+  padding: 40px;
+  box-shadow: var(--sh-4);
+  position: relative;
+}
+.form-progress{
+  display: flex; align-items: center; gap: 14px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+.form-step{
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--clay);
+  font-weight: 500;
+}
+.form-progress-bar{
+  flex: 1;
+  height: 2px;
+  background: var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.form-progress-bar > div{
+  height: 100%;
+  width: 33%;
+  background: var(--clay);
+  border-radius: 2px;
+  transition: width 0.4s var(--ease-out);
+}
+
+.form-block{ margin-bottom: 26px; }
+.form-label{
+  display: block;
+  font-family: var(--f-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+.role-pills{ display: flex; flex-wrap: wrap; gap: 8px; }
+.role-pill{
+  padding: 10px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 13.5px;
+  font-weight: 500;
+  background: var(--paper);
+  color: var(--ink-soft);
+  transition: all 0.3s var(--ease);
+}
+.role-pill:hover{ border-color: var(--sage-soft); color: var(--ink); }
+.role-pill.active{
+  background: var(--sage-deep);
+  color: var(--cream);
+  border-color: var(--sage-deep);
+}
+
+.field{
+  position: relative;
+  padding: 22px 0 12px;
+  border-bottom: 1px solid var(--line);
+  transition: border-color 0.3s var(--ease);
+}
+.field input,
+.field textarea,
+.field select{
+  width: 100%;
+  border: 0;
+  background: transparent;
+  font-size: 15.5px;
+  color: var(--ink);
+  padding: 4px 0;
+  outline: none;
+  font-family: var(--f-body);
+}
+.field textarea{ resize: vertical; min-height: 60px; }
+.field label{
+  position: absolute;
+  top: 22px; left: 0;
+  font-size: 15px;
+  color: var(--ink-mute);
+  pointer-events: none;
+  transition: all 0.3s var(--ease-out);
+}
+.field input:focus ~ label,
+.field input:not(:placeholder-shown) ~ label,
+.field textarea:focus ~ label,
+.field textarea:not(:placeholder-shown) ~ label,
+.field select:focus ~ label,
+.field select:valid ~ label{
+  top: 0;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--clay);
+}
+.field:focus-within{ border-bottom-color: var(--clay); }
+
+.conditional{
+  display: none;
+  animation: fadeUp 0.5s var(--ease-out);
+}
+.conditional.show{ display: block; }
+@keyframes fadeUp{
+  from{ opacity: 0; transform: translateY(8px); }
+  to{ opacity: 1; transform: none; }
+}
+
+.form-submit-row{
+  display: flex; align-items: center; gap: 16px;
+  margin-top: 16px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+.form-mini{
+  font-family: var(--f-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.form-submit{
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 26px;
+  border-radius: 999px;
+  background: var(--clay);
+  color: #fff;
+  font-weight: 500;
+  font-size: 14.5px;
+  transition: all 0.4s var(--ease-out);
+}
+.form-submit:hover{ background: var(--clay-deep); transform: translateY(-2px); box-shadow: var(--sh-clay); }
+.form-submit svg{ width: 16px; height: 16px; transition: transform 0.4s var(--ease-out); }
+.form-submit:hover svg{ transform: translateX(3px); }
+
+.form-success{
+  display: none;
+  text-align: center;
+  padding: 30px 10px;
+}
+.form-success.show{ display: block; }
+.form-success .ic{
+  width: 64px; height: 64px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: var(--sage-mist);
+  color: var(--sage-deep);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.form-success .ic svg{ width: 28px; height: 28px; }
+.form-success h3{ margin-bottom: 14px; font-weight: 450; }
+.form-success p{ color: var(--ink-soft); font-size: 15px; }
+.form-success p strong{ color: var(--clay); font-weight: 500; }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.foot{
+  background: var(--ink-2);
+  color: var(--cream);
+  padding: 80px 0 36px;
+  position: relative;
+  overflow: hidden;
+}
+.foot::before{
+  content: "Rashmi";
+  position: absolute;
+  bottom: -8vw;
+  right: -2vw;
+  font-family: var(--f-display);
+  font-style: italic;
+  font-size: clamp(160px, 22vw, 380px);
+  color: rgba(245,239,227,0.03);
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  pointer-events: none;
+  user-select: none;
+}
+.foot-grid{
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 60px;
+  position: relative;
+}
+@media (max-width: 900px){ .foot-grid{ grid-template-columns: 1fr 1fr; gap: 40px; } }
+@media (max-width: 540px){ .foot-grid{ grid-template-columns: 1fr; } }
+
+.foot-brand .brand-logo{ margin-bottom: 24px; }
+.foot-brand p{
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: rgba(245,239,227,0.6);
+  max-width: 320px;
+  margin-bottom: 24px;
+}
+.foot-social{
+  display: flex; gap: 10px;
+}
+.foot-social a{
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(245,239,227,0.18);
+  display: inline-flex; align-items: center; justify-content: center;
+  color: rgba(245,239,227,0.7);
+  transition: all 0.3s var(--ease);
+}
+.foot-social a:hover{ background: var(--saffron); color: var(--ink); border-color: var(--saffron); }
+.foot-social svg{ width: 16px; height: 16px; }
+
+.foot-col h4{
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(245,239,227,0.55);
+  margin-bottom: 22px;
+  font-weight: 500;
+}
+.foot-col ul{ list-style: none; }
+.foot-col ul li{ margin-bottom: 12px; }
+.foot-col ul a{
+  font-size: 14.5px;
+  color: rgba(245,239,227,0.8);
+  transition: color 0.3s var(--ease);
+}
+.foot-col ul a:hover{ color: var(--saffron); }
+
+.foot-bottom{
+  border-top: 1px solid rgba(245,239,227,0.10);
+  padding-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(245,239,227,0.5);
+  position: relative;
+}
+.foot-bottom a{ color: rgba(245,239,227,0.7); transition: color 0.3s var(--ease); }
+.foot-bottom a:hover{ color: var(--saffron); }
+
+</style>
+</head>
+
+
+<body>
+
+<!-- =============================================================
+     TOPBAR
+     ============================================================= -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-left">
+      <span class="hide-mobile"><span class="dot"></span>Booking 1:1 sessions for July</span>
+      <a href="#book" class="hide-mobile">Book a Session</a>
+    </div>
+    <div class="topbar-right">
+      <span class="hide-mobile">hello@rashmijain.com</span>
+      <span class="hide-mobile">·</span>
+      <a href="tel:+919876543210">+91 98765 43210</a>
+    </div>
+  </div>
+</div>
+
+<!-- =============================================================
+     NAVIGATION
+     ============================================================= -->
+<nav id="nav">
+  <div class="container">
+    <div class="nav-inner">
+
+      <a href="#top" class="brand-logo" aria-label="Rashmi Jain — Home">
+        <span class="brand-mark">
+          <svg viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="22" cy="22" r="20.5" fill="none" stroke="#D4A574" stroke-width="1"/>
+            <circle cx="22" cy="22" r="14" fill="none" stroke="#D4A574" stroke-width="0.7" stroke-opacity="0.5"/>
+            <text x="22" y="29.5" text-anchor="middle"
+              fill="#D4A574" font-family="Fraunces, serif" font-size="20" font-style="italic" font-weight="300"
+              letter-spacing="-0.02em">रj</text>
+            <circle cx="34" cy="11" r="1.4" fill="#C97B5C"/>
+          </svg>
+        </span>
+        <span class="brand-name">
+          Rashmi Jain
+          <span class="sub">Mental Wellness · Yoga</span>
+        </span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#audience" data-nav>For You</a>
+        <a href="#services" data-nav>Services</a>
+        <a href="#founder" data-nav>About</a>
+        <a href="#method" data-nav>Method</a>
+        <a href="#trainings" data-nav>Trainings</a>
+        <a href="#faq" data-nav>FAQ</a>
+      </div>
+
+      <div class="nav-cta">
+        <a href="#book" class="btn btn-saffron">Book a Session
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <button class="menu-toggle" id="open-menu" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- =============================================================
+     MOBILE DRAWER
+     ============================================================= -->
+<div id="mobile-drawer" aria-hidden="true">
+  <div class="drawer-inner">
+    <div class="drawer-top">
+      <a href="#top" class="brand-logo">
+        <span class="brand-mark">
+          <svg viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="22" cy="22" r="20.5" fill="none" stroke="#D4A574" stroke-width="1"/>
+            <circle cx="22" cy="22" r="14" fill="none" stroke="#D4A574" stroke-width="0.7" stroke-opacity="0.5"/>
+            <text x="22" y="29.5" text-anchor="middle" fill="#D4A574" font-family="Fraunces, serif" font-size="20" font-style="italic" font-weight="300">रj</text>
+            <circle cx="34" cy="11" r="1.4" fill="#C97B5C"/>
+          </svg>
+        </span>
+        <span class="brand-name">Rashmi Jain<span class="sub">Mental Wellness · Yoga</span></span>
+      </a>
+      <button class="drawer-close" id="close-menu" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="drawer-links">
+      <a href="#audience">For You</a>
+      <a href="#services">Services</a>
+      <a href="#founder">About</a>
+      <a href="#method">Method</a>
+      <a href="#trainings">Trainings</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="drawer-foot">
+      <a href="#book" class="btn btn-saffron">Book a Session
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <div class="drawer-meta">
+        <span>Est. 2011</span>
+        <span>Jaipur · Online</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =============================================================
+     HERO
+     ============================================================= -->
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-vignette"></div>
+
+  <!-- Floating ornaments — lotus/sun marks -->
+  <svg class="orn orn-1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="22" fill="none" stroke="#D4A574" stroke-width="1" opacity="0.7"/>
+    <circle cx="50" cy="50" r="34" fill="none" stroke="#D4A574" stroke-width="0.6" opacity="0.4"/>
+    <circle cx="50" cy="50" r="46" fill="none" stroke="#D4A574" stroke-width="0.4" opacity="0.2"/>
+  </svg>
+  <svg class="orn orn-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50 10 C 70 30, 70 70, 50 90 C 30 70, 30 30, 50 10 Z" fill="none" stroke="#C97B5C" stroke-width="1" opacity="0.6"/>
+    <path d="M10 50 C 30 30, 70 30, 90 50 C 70 70, 30 70, 10 50 Z" fill="none" stroke="#C97B5C" stroke-width="1" opacity="0.6"/>
+  </svg>
+  <svg class="orn orn-3" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="40" fill="none" stroke="#A8B89A" stroke-width="0.8"/>
+    <line x1="10" y1="50" x2="90" y2="50" stroke="#A8B89A" stroke-width="0.5" opacity="0.6"/>
+    <line x1="50" y1="10" x2="50" y2="90" stroke="#A8B89A" stroke-width="0.5" opacity="0.6"/>
+  </svg>
+
+  <!-- Massive faded background word -->
+  <div class="hero-mega-word">stillness</div>
+
+  <div class="hero-inner container">
+    <div class="hero-grid-layout">
+      <div class="hero-content" data-reveal>
+        <div class="hero-eyebrow">
+          <span class="pulse"></span>
+          <span>Mental Wellness · Yoga Therapy · Meditation</span>
+        </div>
+
+        <h1>
+          Stillness,<br>
+          when you are<br>
+          <span class="accent">ready for it<span class="dot">.</span></span>
+        </h1>
+
+        <p class="hero-sub">
+          For over <strong>fifteen years</strong>, Rashmi Jain has guided more than <strong>2,000 individuals, students and organisations</strong> through the quiet practice of returning home — to the breath, to the body, to a steadier mind.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#book" class="btn btn-saffron">Book a Listening Call
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#audience" class="btn btn-glass">Find your starting point</a>
+        </div>
+      </div>
+
+      <div class="hero-side" data-reveal style="--d:200ms">
+        <div class="founder-card">
+          <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=85" alt="Rashmi Jain — Founder">
+          <div class="quote-strip">
+            <div class="q">"The breath is the simplest medicine the body has ever known."</div>
+            <div class="by">Rashmi Jain<span class="div">·</span>Founder</div>
+          </div>
+        </div>
+
+        <div class="stat-float">
+          <div class="num">2,000<sup>+</sup></div>
+          <div class="lbl">Lives Touched</div>
+        </div>
+
+        <div class="badge-float">
+          <div class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2L12 16.4 5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+          </div>
+          <div>
+            <div class="t">E-RYT 500 · IAYT</div>
+            <div class="s">Yoga Alliance · International Association of Yoga Therapists</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue">
+    <div>Scroll</div>
+    <div class="line"></div>
+  </div>
+</section>
+
+<!-- =============================================================
+     TRUST STRIP
+     ============================================================= -->
+<section class="trust-strip">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-item" data-reveal>
+        <div class="num">2K<sup style="color:var(--clay);font-size:0.5em;vertical-align:super">+</sup></div>
+        <div class="lbl">Students<br>Guided</div>
+      </div>
+      <div class="trust-item" data-reveal style="--d:80ms">
+        <div class="num">15<sup style="color:var(--clay);font-size:0.5em;vertical-align:super">+</sup></div>
+        <div class="lbl">Years of<br>Practice</div>
+      </div>
+      <div class="trust-item" data-reveal style="--d:160ms">
+        <div class="num">4.9</div>
+        <div class="lbl">Average<br>Rating</div>
+      </div>
+      <div class="trust-item" data-reveal style="--d:240ms">
+        <div class="num" style="font-size:18px;line-height:1.2">E-RYT · IAYT</div>
+        <div class="lbl">Certified<br>Practitioner</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================================
+     AUDIENCE TABS
+     ============================================================= -->
+<section class="sec audience" id="audience">
+  <div class="container">
+    <div class="sec-head">
+      <div data-reveal>
+        <div class="eyebrow">Who I work with</div>
+        <h2>The work begins<br>where words run out.</h2>
+      </div>
+      <div class="right" data-reveal style="--d:80ms">
+        Every life arrives at a moment where the mind has run too long without rest. This practice meets you there — whether you come as an individual, a student, a leader, or as the educator others rely on.
+      </div>
+    </div>
+
+    <div class="tabs-rail" data-reveal>
+      <button class="tab active" data-tab="individuals">For Individuals</button>
+      <button class="tab" data-tab="students">For Students</button>
+      <button class="tab" data-tab="corporates">For Corporates</button>
+      <button class="tab" data-tab="educators">For Educators</button>
+    </div>
+
+    <div class="panels">
+      <div class="panel active" data-panel="individuals">
+        <div class="panel-img" data-reveal>
+          <span class="corner">Individuals</span>
+          <img src="https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?auto=format&fit=crop&w=1400&q=85" alt="Individual yoga therapy session">
+        </div>
+        <div class="panel-body" data-reveal style="--d:120ms">
+          <div class="eyebrow clay">Personal practice</div>
+          <h3 style="margin-top:14px">For the person who is <em>tired of holding it together.</em></h3>
+          <p>One-to-one yoga therapy and counselling sessions for anxiety, burnout, grief, sleep, and the long quiet seasons in between. Slow, evidence-informed, and shaped to your body — not the other way around.</p>
+          <ul class="panel-list">
+            <li>Anxiety, overwhelm and chronic stress patterns</li>
+            <li>Sleep, fatigue and nervous-system regulation</li>
+            <li>Grief, transition and life-stage shifts</li>
+            <li>Trauma-informed breath and movement work</li>
+          </ul>
+          <a href="#book" class="btn btn-primary">Begin a personal practice
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="panel" data-panel="students">
+        <div class="panel-img" data-reveal>
+          <span class="corner">Students</span>
+          <img src="https://images.unsplash.com/photo-1593810450967-f9c42742e326?auto=format&fit=crop&w=1400&q=85" alt="Yoga and mindfulness for students">
+        </div>
+        <div class="panel-body" data-reveal style="--d:120ms">
+          <div class="eyebrow clay">Adolescents · Young Adults</div>
+          <h3 style="margin-top:14px">For the student who is <em>carrying more than they can name.</em></h3>
+          <p>A gentle, age-appropriate practice for academic pressure, exam anxiety, screen fatigue and the slow erosion of focus. Designed in partnership with parents — not in spite of them.</p>
+          <ul class="panel-list">
+            <li>Exam anxiety, focus and study-rhythm coaching</li>
+            <li>Sleep hygiene and screen-detox protocols</li>
+            <li>Body-image and identity work for teens</li>
+            <li>Family practice — once a fortnight, together</li>
+          </ul>
+          <a href="#book" class="btn btn-primary">Enquire for your child
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="panel" data-panel="corporates">
+        <div class="panel-img" data-reveal>
+          <span class="corner">Corporates</span>
+          <img src="https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&w=1400&q=85" alt="Corporate wellness program">
+        </div>
+        <div class="panel-body" data-reveal style="--d:120ms">
+          <div class="eyebrow clay">Teams · Leaders</div>
+          <h3 style="margin-top:14px">For the team that has been <em>holding it together for far too long.</em></h3>
+          <p>Embedded wellness programmes, leadership retreats and weekly breathwork for teams that have outgrown the standard gym-stipend version of "wellbeing." Measurable. Quiet. Respected by the people who sit through it.</p>
+          <ul class="panel-list">
+            <li>Weekly on-site or virtual breath and movement sessions</li>
+            <li>Leadership retreats — two to five days, off-grid</li>
+            <li>Burnout audit + 90-day re-entry programmes</li>
+            <li>Manager training in psychological-safety practice</li>
+          </ul>
+          <a href="#book" class="btn btn-primary">Design a programme
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="panel" data-panel="educators">
+        <div class="panel-img" data-reveal>
+          <span class="corner">Educators</span>
+          <img src="https://images.unsplash.com/photo-1591291621164-2c6367723315?auto=format&fit=crop&w=1400&q=85" alt="Yoga teacher training">
+        </div>
+        <div class="panel-body" data-reveal style="--d:120ms">
+          <div class="eyebrow clay">Teachers · Therapists</div>
+          <h3 style="margin-top:14px">For the practitioner who wants to <em>teach this work themselves.</em></h3>
+          <p>Two flagship certifications and a mentorship cohort for yoga teachers, therapists and educators who want to integrate trauma-informed practice into their existing work — with proper supervision, ethics, and post-cohort community.</p>
+          <ul class="panel-list">
+            <li>200-hour Foundational Yoga Teacher Training</li>
+            <li>Advanced Trauma-Informed Yoga Therapy certificate</li>
+            <li>Monthly mentorship and case-supervision group</li>
+            <li>Custom in-house training for schools and clinics</li>
+          </ul>
+          <a href="#trainings" class="btn btn-primary">View the trainings
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================
+     SERVICES — pinned horizontal scroll
+     ============================================================= -->
+<section class="services" id="services">
+  <div class="services-pin">
+    <div class="services-track" id="services-track">
+
+      <div class="svc-intro">
+        <div class="eyebrow">What I offer</div>
+        <h2>Four practices.<br>One philosophy of healing.</h2>
+        <p>This isn't a studio you drop into. Every engagement is shaped, contained, and time-bound — a real practice with a beginning, a middle, and a way out. The work is closer to therapy than fitness.</p>
+      </div>
+
+      <article class="svc-card">
+        <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&w=1400&q=85" alt="One-to-one yoga therapy">
+        <div class="roman">I</div>
+        <div class="content">
+          <span class="tag">01 · Therapy</span>
+          <h3>1:1 Yoga Therapy</h3>
+          <p class="desc">A clinical, trauma-informed practice — built session by session around your nervous system, sleep, breath patterns and body history. Not a class. A practice.</p>
+          <div class="pills"><span>Anxiety</span><span>Sleep</span><span>Burnout</span></div>
+          <a href="#book" class="explore">Begin a practice
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="svc-card">
+        <img src="https://images.unsplash.com/photo-1474418397713-7ede21d49118?auto=format&fit=crop&w=1400&q=85" alt="Mental health counselling">
+        <div class="roman">II</div>
+        <div class="content">
+          <span class="tag">02 · Counsel</span>
+          <h3>Mental Health Counselling</h3>
+          <p class="desc">Talk-based therapy paired with somatic practice — for grief, transition, identity work, and the seasons that conventional therapy doesn't quite reach. Held in confidence, paced with care.</p>
+          <div class="pills"><span>Grief</span><span>Transition</span><span>Identity</span></div>
+          <a href="#book" class="explore">Begin a practice
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="svc-card">
+        <img src="https://images.unsplash.com/photo-1532798442725-41036acc7489?auto=format&fit=crop&w=1400&q=85" alt="Group classes and retreats">
+        <div class="roman">III</div>
+        <div class="content">
+          <span class="tag">03 · Community</span>
+          <h3>Group Classes &amp; Retreats</h3>
+          <p class="desc">Small-group practice in Jaipur and seasonal retreats in Rishikesh, Pondicherry and the Himalayas — twelve students at most. Practitioner-led, not influencer-led.</p>
+          <div class="pills"><span>Weekly Studio</span><span>Weekend Retreats</span><span>Pranayama</span></div>
+          <a href="#book" class="explore">Reserve a seat
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="svc-card">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1400&q=85" alt="Corporate wellness programs">
+        <div class="roman">IV</div>
+        <div class="content">
+          <span class="tag">04 · Workplace</span>
+          <h3>Corporate Wellness</h3>
+          <p class="desc">Embedded breath and movement programmes for teams that are quietly burning out. Leadership retreats, weekly sessions, manager training — measured against real outcomes, not vanity metrics.</p>
+          <div class="pills"><span>Embedded</span><span>Leadership</span><span>Retreats</span></div>
+          <a href="#book" class="explore">Design a programme
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="svc-progress-wrap">
+      <div class="svc-progress"><div class="bar" id="services-bar"></div></div>
+      <div class="svc-counter" id="services-counter">01 / 04</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================================
+     FOUNDER
+     ============================================================= -->
+<section class="sec founder-sec" id="founder">
+  <div class="container">
+    <div class="founder-grid">
+      <div class="founder-img-wrap" data-reveal>
+        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1200&q=85" alt="Rashmi Jain">
+        <div class="creds">
+          <div class="c"><strong>E-RYT 500</strong>Yoga Alliance · Experienced Registered Yoga Teacher</div>
+          <div class="c"><strong>C-IAYT</strong>Certified Yoga Therapist · IAYT</div>
+          <div class="c"><strong>MA Psychology</strong>Counselling &amp; Trauma</div>
+          <div class="c"><strong>MBSR Trained</strong>Mindfulness-Based Stress Reduction</div>
+        </div>
+      </div>
+
+      <div class="founder-body" data-reveal style="--d:120ms">
+        <div class="eyebrow">The practitioner</div>
+        <h2>Rashmi Jain.<br>The <em>practice</em> behind the practice.</h2>
+        <p>For more than fifteen years, Rashmi has held space for the people who arrive at yoga not for fitness, but for something quieter — a way to live inside their own bodies again. Her training crosses the traditional Hatha lineage, modern yoga therapy, and clinical mental-health counselling.</p>
+        <p>Her work moves between one-to-one trauma-informed therapy, small-group practice in Jaipur, seasonal retreats in the Himalayas, and certification programmes that have trained teachers across India, Singapore and the UK.</p>
+        <div class="pull">"We don't practice to escape the noise. We practice to stop calling our own minds noise."</div>
+        <p>She has been featured by Vogue India, The Wellness Issue, Outlook Mind+Body and across leading publications on contemplative practice and mental health.</p>
+        <div class="sig">Rashmi Jain<span style="color:var(--ink-mute);margin:0 12px">·</span><strong>Founder</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================
+     METHOD — four steps
+     ============================================================= -->
+<section class="sec method" id="method">
+  <div class="container">
+    <div class="sec-head">
+      <div data-reveal>
+        <div class="eyebrow">How the work moves</div>
+        <h2>A four-step arc.<br>No theatrics, no magic.</h2>
+      </div>
+      <div class="right" data-reveal style="--d:80ms">
+        Every engagement — personal, corporate or educational — moves through the same disciplined arc. Specific to you, predictable to me. We measure the change in your sleep, breath and rhythm — not in the language of healing.
+      </div>
+    </div>
+
+    <div class="method-grid">
+      <div class="step" data-reveal>
+        <div class="stepnum"><span>Step 01</span><span class="duration">20 min · Free</span></div>
+        <h3>Listening Call</h3>
+        <p>A short conversation to understand what you are carrying and whether this practice is the right fit. No assessment, no obligation, no fee.</p>
+      </div>
+      <div class="step" data-reveal style="--d:80ms">
+        <div class="stepnum"><span>Step 02</span><span class="duration">75 min · Paid</span></div>
+        <h3>Assessment</h3>
+        <p>A structured 75-minute intake — breath, body, sleep, history. At the end you'll have a written practice plan, not a vague intention to "feel better."</p>
+      </div>
+      <div class="step" data-reveal style="--d:160ms">
+        <div class="stepnum"><span>Step 03</span><span class="duration">8 – 12 sessions</span></div>
+        <h3>Practice Engagement</h3>
+        <p>A time-bound engagement with measurable markers — typically eight to twelve sessions, weekly or fortnightly, depending on what we're holding together.</p>
+      </div>
+      <div class="step" data-reveal style="--d:240ms">
+        <div class="stepnum"><span>Step 04</span><span class="duration">3-month aftercare</span></div>
+        <h3>Integration</h3>
+        <p>Three months of light-touch follow-through — monthly check-ins, refinements to your home practice, and a clean way out when the work has held.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================
+     TESTIMONIALS — slider
+     ============================================================= -->
+<section class="sec tests" id="testimonials">
+  <div class="container">
+    <div class="tests-head">
+      <div class="left" data-reveal>
+        <div class="eyebrow gold">In their words</div>
+        <h2>Fifteen years of<br>quiet returns.</h2>
+      </div>
+      <div class="right" data-reveal style="--d:80ms">
+        I don't ask for testimonials. These were written, unprompted, by people who have practised with me over the last fifteen years — students, executives, parents, teachers in training.
+      </div>
+      <div class="tests-controls" data-reveal style="--d:160ms">
+        <button id="t-prev" aria-label="Previous">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </button>
+        <button id="t-next" aria-label="Next">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="tests-slider">
+      <div class="tests-track" id="tests-track">
+
+        <article class="t-card">
+          <div class="t-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+          </div>
+          <p class="t-body">I came in unable to sleep through a full night. Twelve weeks later, I sleep — and more than that, I trust my body again. Rashmi never promised that. She just kept showing up with the work.</p>
+          <div class="t-foot">
+            <div class="t-avatar">AM</div>
+            <div class="t-meta">
+              <div class="nm">Ananya Mehta</div>
+              <div class="rl">Founder · Personal Practice</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="t-card">
+          <div class="t-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+          </div>
+          <p class="t-body">Our leadership team did a five-day retreat with Rashmi after a brutal quarter. I expected a wellness offsite. What I got was a re-set in how we communicate, listen and lead. We've kept her on a retainer since.</p>
+          <div class="t-foot">
+            <div class="t-avatar">VR</div>
+            <div class="t-meta">
+              <div class="nm">Vikram Rao</div>
+              <div class="rl">COO · Series B SaaS Company</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="t-card">
+          <div class="t-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+          </div>
+          <p class="t-body">My daughter was sixteen, anxious, and not eating well. After three months with Rashmi — gentle, never preachy — she sleeps, eats and laughs again. I came for her. I stayed because the practice changed me too.</p>
+          <div class="t-foot">
+            <div class="t-avatar">PK</div>
+            <div class="t-meta">
+              <div class="nm">Priya Kapoor</div>
+              <div class="rl">Parent · Mother-Daughter Practice</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="t-card">
+          <div class="t-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+          </div>
+          <p class="t-body">I trained as a yoga teacher with three other schools before Rashmi's 200-hour. Hers was the only one that took the word "trauma-informed" seriously — supervision, ethics, the whole stack. I teach completely differently now.</p>
+          <div class="t-foot">
+            <div class="t-avatar">SN</div>
+            <div class="t-meta">
+              <div class="nm">Saanvi Nair</div>
+              <div class="rl">Yoga Teacher · Trainee Cohort 2023</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="t-card">
+          <div class="t-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+          </div>
+          <p class="t-body">After my mother passed, I tried medication and conventional therapy. Helpful, but the grief still lived in my body. Six months with Rashmi gave me a way to carry it — not get rid of it. That distinction is the whole practice.</p>
+          <div class="t-foot">
+            <div class="t-avatar">DT</div>
+            <div class="t-meta">
+              <div class="nm">Devika Trivedi</div>
+              <div class="rl">Architect · Grief &amp; Transition</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="t-card">
+          <div class="t-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.853 1.417 8.265L12 19.771l-7.417 4.097L6 15.603 0 9.75l8.332-1.595z"/></svg>
+          </div>
+          <p class="t-body">We brought Rashmi in for a single one-day reset with our senior team. A year later, the breath practice she taught us still opens our quarterly off-sites. Quiet, useful, deeply respected.</p>
+          <div class="t-foot">
+            <div class="t-avatar">AR</div>
+            <div class="t-meta">
+              <div class="nm">Arjun Reddy</div>
+              <div class="rl">CHRO · Family-Office Holding Group</div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="tests-dots" id="tests-dots"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================================
+     PARTNERS marquee
+     ============================================================= -->
+<section class="sec partners" id="partners">
+  <div class="container">
+    <div class="partners-head" data-reveal>
+      <div class="eyebrow">Featured &amp; trusted by</div>
+      <h2>Fifteen years of quiet practice.</h2>
+      <p>From wellness publications and yoga federations to corporate partners and contemplative-practice schools — institutions that have invited Rashmi to teach, train, write or hold space.</p>
+    </div>
+
+    <div class="marquee-wrap" data-reveal style="--d:120ms">
+      <div class="marquee">
+        <div class="logo-card"><span>Yoga Alliance</span></div>
+        <div class="logo-card"><span>IAYT</span></div>
+        <div class="logo-card"><span>Vogue India</span></div>
+        <div class="logo-card"><span>Outlook Mind+Body</span></div>
+        <div class="logo-card"><span>The Wellness Issue</span></div>
+        <div class="logo-card"><span>Sivananda</span></div>
+        <div class="logo-card"><span>Conscious Living</span></div>
+        <div class="logo-card"><span>Ananda Retreats</span></div>
+        <!-- Duplicate set for infinite loop -->
+        <div class="logo-card"><span>Yoga Alliance</span></div>
+        <div class="logo-card"><span>IAYT</span></div>
+        <div class="logo-card"><span>Vogue India</span></div>
+        <div class="logo-card"><span>Outlook Mind+Body</span></div>
+        <div class="logo-card"><span>The Wellness Issue</span></div>
+        <div class="logo-card"><span>Sivananda</span></div>
+        <div class="logo-card"><span>Conscious Living</span></div>
+        <div class="logo-card"><span>Ananda Retreats</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================
+     CERTIFICATIONS / TRAININGS
+     ============================================================= -->
+<section class="sec certs" id="trainings">
+  <div class="container">
+    <div class="sec-head">
+      <div data-reveal>
+        <div class="eyebrow">Train with me</div>
+        <h2>Two paths.<br>Both end in <em>practice.</em></h2>
+      </div>
+      <div class="right" data-reveal style="--d:80ms">
+        Two structured certification cohorts for yoga teachers, therapists, counsellors and educators who want to teach this work themselves — designed and led by Rashmi, with small cohorts, real supervision, and post-cohort community.
+      </div>
+    </div>
+
+    <div class="certs-grid">
+      <div class="cert" data-reveal>
+        <div class="cert-media">
+          <div class="badge">Cohort I</div>
+          <div class="pill">Foundational</div>
+          <img src="https://images.unsplash.com/photo-1593810450967-f9c42742e326?auto=format&fit=crop&w=1400&q=85" alt="200-hour Yoga Teacher Training">
+        </div>
+        <div class="cert-body">
+          <h3>200-Hour Yoga Teacher Training</h3>
+          <p>A foundational practitioner training rooted in Hatha lineage, modern anatomy and trauma-informed sequencing — built for educators and teachers who want to advise students confidently from day one.</p>
+          <div class="specs">
+            <div class="s"><strong>Format</strong><span>Hybrid</span></div>
+            <div class="s"><strong>Duration</strong><span>12 weeks</span></div>
+            <div class="s"><strong>Cohort</strong><span>12 max</span></div>
+          </div>
+          <a href="#book" class="cert-cta">
+            Enrol in the next cohort
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="cert" data-reveal style="--d:120ms">
+        <div class="cert-media">
+          <div class="badge">Cohort II</div>
+          <div class="pill">Advanced</div>
+          <img src="https://images.unsplash.com/photo-1611689342806-0863700ce1e4?auto=format&fit=crop&w=1400&q=85" alt="Trauma-Informed Yoga Therapy">
+        </div>
+        <div class="cert-body">
+          <h3>Trauma-Informed Yoga Therapy</h3>
+          <p>An advanced certificate for existing teachers and counsellors — covering polyvagal-informed sequencing, ethics, scope of practice, case supervision and a six-month post-cohort mentorship.</p>
+          <div class="specs">
+            <div class="s"><strong>Format</strong><span>In-person</span></div>
+            <div class="s"><strong>Duration</strong><span>6 months</span></div>
+            <div class="s"><strong>Cohort</strong><span>8 max</span></div>
+          </div>
+          <a href="#book" class="cert-cta">
+            Talk to admissions
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================
+     FAQ
+     ============================================================= -->
+<section class="sec faq" id="faq">
+  <div class="container">
+    <div class="sec-head" style="margin-bottom:48px">
+      <div data-reveal>
+        <div class="eyebrow">Honest answers</div>
+        <h2>Things you might be<br>wondering.</h2>
+      </div>
+      <div class="right" data-reveal style="--d:80ms">
+        If your question isn't here, write to <a href="mailto:hello@rashmijain.com" style="color:var(--clay);text-decoration:underline">hello@rashmijain.com</a> — Rashmi or someone from her practice will reply within one working day.
+      </div>
+    </div>
+
+    <div class="faq-grid" data-reveal>
+      <details class="faq-item">
+        <summary>Is this yoga, or is this therapy?
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="faq-body">It is both, held in the same room. Yoga therapy uses breath, movement and stillness as clinical tools — not as fitness. The counselling is conventional talk-based practice, paced and contained. Most clients arrive needing both, and we shape the proportions to you.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do I need to be flexible? Or already practising yoga?
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="faq-body">No — most people who come to this practice have never been on a yoga mat, and many arrive specifically because conventional yoga felt too performative. The work begins with breath, slow movement and listening. Flexibility is never the goal; presence is.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What does an engagement typically cost?
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="faq-body">It depends on scope. A single intake session is priced very differently from a 12-session engagement, a corporate retainer or a teacher training. Specific numbers are shared after the free listening call — once we know what we're holding together.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you offer sessions online?
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="faq-body">Yes — most one-to-one work runs over secure video, and a meaningful portion of the practice happens in your own home anyway. In-person sessions are available in Jaipur by appointment, and retreats are held seasonally in the Himalayas and Pondicherry.</div>
+      </details>
+      <details class="faq-item">
+        <summary>I'm training my organisation's wellness lead — how does that work?
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="faq-body">Two flagship cohorts run twice a year — the 200-hour foundational training and the advanced trauma-informed certificate. Companies, clinics and schools typically enrol two to four members per cycle. A custom in-house version can also be built for your team.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How quickly will you respond to my form?
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="faq-body">Within one working day — usually the same evening. Rashmi or her practice manager reads every form personally. There is no call-centre, no automated funnel, and no follow-up beyond the one reply unless you ask for it.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================
+     LEAD FORM
+     ============================================================= -->
+<section class="sec lead" id="book">
+  <div class="container">
+    <div class="lead-grid">
+      <div class="lead-left" data-reveal>
+        <div class="eyebrow light">Book a Listening Call</div>
+        <h2>Twenty minutes is a small price for <span class="accent">a much quieter year.</span></h2>
+        <p>Tell me a little about who's writing and what you're carrying. I'll respond personally within one working day — usually the same evening.</p>
+
+        <div class="lead-meta">
+          <div class="m">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><div class="t">Speak directly</div><div class="v">+91 98765 43210</div></div>
+          </div>
+          <div class="m">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div><div class="t">Write</div><div class="v">hello@rashmijain.com</div></div>
+          </div>
+          <div class="m">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><div class="t">Practice space</div><div class="v">Jaipur, Rajasthan · Online globally</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lead-right" data-reveal style="--d:120ms">
+
+        <div id="form-body">
+          <div class="form-progress">
+            <span class="form-step" id="step-text">Step 1 of 3</span>
+            <div class="form-progress-bar"><div id="form-bar"></div></div>
+          </div>
+
+          <div class="form-block">
+            <label class="form-label">Who is writing today?</label>
+            <div class="role-pills">
+              <button class="role-pill active" data-role="self">For myself</button>
+              <button class="role-pill" data-role="parent">For my child</button>
+              <button class="role-pill" data-role="corporate">For my team</button>
+              <button class="role-pill" data-role="teacher">For training</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <input type="text" id="f-name" placeholder=" " required>
+            <label for="f-name">Your full name</label>
+          </div>
+
+          <div class="field">
+            <input type="tel" id="f-phone" placeholder=" " required>
+            <label for="f-phone">Phone (with country code)</label>
+          </div>
+
+          <div class="field">
+            <input type="email" id="f-email" placeholder=" " required>
+            <label for="f-email">Email</label>
+          </div>
+
+          <div class="field conditional show" data-when="self">
+            <select id="f-concern" required>
+              <option value="" disabled selected hidden></option>
+              <option>Anxiety or overwhelm</option>
+              <option>Sleep difficulty</option>
+              <option>Grief or transition</option>
+              <option>Burnout and recovery</option>
+              <option>General wellness practice</option>
+              <option>Something else</option>
+            </select>
+            <label for="f-concern">What brings you here?</label>
+          </div>
+
+          <div class="field conditional" data-when="parent">
+            <input type="text" id="f-child-age" placeholder=" ">
+            <label for="f-child-age">Child's age &amp; school</label>
+          </div>
+
+          <div class="field conditional" data-when="corporate">
+            <input type="text" id="f-org" placeholder=" ">
+            <label for="f-org">Organisation &amp; team size</label>
+          </div>
+
+          <div class="field conditional" data-when="teacher">
+            <select id="f-training">
+              <option value="" disabled selected hidden></option>
+              <option>200-hour Foundational Training</option>
+              <option>Advanced Trauma-Informed Certificate</option>
+              <option>Custom in-house training</option>
+              <option>Still deciding</option>
+            </select>
+            <label for="f-training">Which programme?</label>
+          </div>
+
+          <div class="field">
+            <textarea id="f-msg" placeholder=" " rows="2"></textarea>
+            <label for="f-msg">Anything I should know before we speak?</label>
+          </div>
+
+          <div class="form-submit-row">
+            <span class="form-mini">Reply within 1 working day</span>
+            <button class="form-submit" id="f-submit" type="button">Send Enquiry
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div id="form-success" class="form-success">
+          <div class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3>Thank you, <strong><span id="success-name">friend</span></strong></h3>
+          <p>Your enquiry has reached me. I'll write back to <strong><span id="success-email">your email</span></strong> within one working day — usually the same evening.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================
+     FOOTER
+     ============================================================= -->
+<footer class="foot">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#top" class="brand-logo">
+          <span class="brand-mark">
+            <svg viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="22" cy="22" r="20.5" fill="none" stroke="#D4A574" stroke-width="1"/>
+              <circle cx="22" cy="22" r="14" fill="none" stroke="#D4A574" stroke-width="0.7" stroke-opacity="0.5"/>
+              <text x="22" y="29.5" text-anchor="middle" fill="#D4A574" font-family="Fraunces, serif" font-size="20" font-style="italic" font-weight="300">रj</text>
+              <circle cx="34" cy="11" r="1.4" fill="#C97B5C"/>
+            </svg>
+          </span>
+          <span class="brand-name">Rashmi Jain<span class="sub">Mental Wellness · Yoga</span></span>
+        </a>
+        <p>A quiet, considered practice in mental wellness and yoga therapy — for individuals, students and organisations ready to return home to themselves.</p>
+        <div class="foot-social">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.08C5.12 19.54 12 19.54 12 19.54s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" aria-label="Spotify">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 9c4-1 8 0 10 2M8 13c3-1 6 0 8 1M8 17c2-1 4 0 5 1"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="foot-col">
+        <h4>Practice</h4>
+        <ul>
+          <li><a href="#audience">For You</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#method">Method</a></li>
+          <li><a href="#book">Book a Call</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h4>Train</h4>
+        <ul>
+          <li><a href="#trainings">200-hour Teacher Training</a></li>
+          <li><a href="#trainings">Trauma-Informed Therapy</a></li>
+          <li><a href="#trainings">Mentorship Circle</a></li>
+          <li><a href="#trainings">Custom Programmes</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h4>Reach</h4>
+        <ul>
+          <li><a href="mailto:hello@rashmijain.com">hello@rashmijain.com</a></li>
+          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><a href="#">Jaipur, Rajasthan</a></li>
+          <li><a href="#">Online · Worldwide</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <div>© 2026 Rashmi Jain Practice · All rights reserved</div>
+      <div style="display:flex;gap:20px"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Code of Conduct</a></div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- =============================================================
+     SCRIPTS
+     ============================================================= -->
+<script>
+(function(){
+  'use strict';
+
+  // ---- Nav scroll state
+  const nav = document.getElementById('nav');
+  const onScroll = () => {
+    if (window.scrollY > 24) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // ---- Mobile drawer
+  const drawer = document.getElementById('mobile-drawer');
+  const open = document.getElementById('open-menu');
+  const close = document.getElementById('close-menu');
+  if (open) open.addEventListener('click', () => { drawer.classList.add('open'); document.body.style.overflow = 'hidden'; });
+  if (close) close.addEventListener('click', () => { drawer.classList.remove('open'); document.body.style.overflow = ''; });
+  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { drawer.classList.remove('open'); document.body.style.overflow = ''; }));
+
+  // ---- Audience tabs
+  const tabs = document.querySelectorAll('.tab');
+  const panels = document.querySelectorAll('.panel');
+  tabs.forEach(t => {
+    t.addEventListener('click', () => {
+      const key = t.dataset.tab;
+      tabs.forEach(x => x.classList.remove('active'));
+      t.classList.add('active');
+      panels.forEach(p => {
+        if (p.dataset.panel === key) p.classList.add('active');
+        else p.classList.remove('active');
+      });
+    });
+  });
+
+  // ---- Intersection reveal
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { rootMargin: '-8% 0px -8% 0px' });
+    document.querySelectorAll('[data-reveal]').forEach(el => io.observe(el));
+  } else {
+    document.querySelectorAll('[data-reveal]').forEach(el => el.classList.add('in'));
+  }
+
+  // ---- GSAP services pinned horizontal scroll
+  if (window.gsap && window.ScrollTrigger && window.innerWidth >= 1024) {
+    gsap.registerPlugin(ScrollTrigger);
+    const track = document.getElementById('services-track');
+    const bar = document.getElementById('services-bar');
+    const counter = document.getElementById('services-counter');
+    if (track) {
+      const totalScroll = () => track.scrollWidth - window.innerWidth;
+      ScrollTrigger.create({
+        trigger: '.services-pin',
+        start: 'top top',
+        end: () => '+=' + (track.scrollWidth - window.innerWidth + 100),
+        pin: true,
+        scrub: 1,
+        anticipatePin: 1,
+        invalidateOnRefresh: true,
+        onUpdate: self => {
+          const x = -self.progress * totalScroll();
+          gsap.set(track, { x });
+          if (bar) bar.style.width = Math.max(8, self.progress * 100) + '%';
+          if (counter) {
+            const idx = Math.min(4, Math.max(1, Math.ceil(self.progress * 4) || 1));
+            counter.textContent = String(idx).padStart(2,'0') + ' / 04';
+          }
+        }
+      });
+      window.addEventListener('resize', () => { ScrollTrigger.refresh(); });
+    }
+  }
+
+  // ---- Testimonials slider
+  const ttrack = document.getElementById('tests-track');
+  const tprev = document.getElementById('t-prev');
+  const tnext = document.getElementById('t-next');
+  const tdots = document.getElementById('tests-dots');
+  if (ttrack) {
+    const cards = ttrack.querySelectorAll('.t-card');
+    const total = cards.length;
+    let perView = 3;
+    let idx = 0;
+
+    const recalc = () => {
+      if (window.innerWidth < 640) perView = 1;
+      else if (window.innerWidth < 1024) perView = 2;
+      else perView = 3;
+    };
+    recalc();
+
+    const buildDots = () => {
+      tdots.innerHTML = '';
+      const pages = Math.max(1, total - perView + 1);
+      for (let i = 0; i < pages; i++) {
+        const d = document.createElement('button');
+        d.className = 'tdot' + (i === idx ? ' active' : '');
+        d.addEventListener('click', () => { idx = i; render(); });
+        tdots.appendChild(d);
+      }
+    };
+
+    const render = () => {
+      const maxIdx = total - perView;
+      if (idx < 0) idx = 0;
+      if (idx > maxIdx) idx = maxIdx;
+      const card = cards[0];
+      const cardW = card.getBoundingClientRect().width + 28;
+      ttrack.style.transform = 'translateX(' + (-idx * cardW) + 'px)';
+      tdots.querySelectorAll('.tdot').forEach((d,i) => d.classList.toggle('active', i === idx));
+      tprev.disabled = idx <= 0;
+      tnext.disabled = idx >= maxIdx;
+    };
+
+    if (tprev) tprev.addEventListener('click', () => { idx--; render(); });
+    if (tnext) tnext.addEventListener('click', () => { idx++; render(); });
+
+    window.addEventListener('resize', () => {
+      const prev = perView;
+      recalc();
+      if (prev !== perView) { idx = 0; buildDots(); }
+      render();
+    });
+
+    buildDots();
+    render();
+
+    // Autoplay
+    let auto = setInterval(() => {
+      const maxIdx = total - perView;
+      idx = idx >= maxIdx ? 0 : idx + 1;
+      render();
+    }, 6000);
+    ttrack.addEventListener('mouseenter', () => clearInterval(auto));
+    ttrack.addEventListener('mouseleave', () => {
+      auto = setInterval(() => {
+        const maxIdx = total - perView;
+        idx = idx >= maxIdx ? 0 : idx + 1;
+        render();
+      }, 6000);
+    });
+  }
+
+  // ---- Dynamic form
+  const pills = document.querySelectorAll('.role-pill');
+  const conds = document.querySelectorAll('.conditional');
+  const stepText = document.getElementById('step-text');
+  const formBar = document.getElementById('form-bar');
+
+  const updateConds = (role) => {
+    conds.forEach(c => {
+      if (c.dataset.when === role) c.classList.add('show');
+      else c.classList.remove('show');
+    });
+  };
+
+  pills.forEach(p => {
+    p.addEventListener('click', () => {
+      pills.forEach(x => x.classList.remove('active'));
+      p.classList.add('active');
+      updateConds(p.dataset.role);
+      if (stepText) stepText.textContent = 'Step 2 of 3';
+      if (formBar) formBar.style.width = '66%';
+    });
+  });
+
+  // Track form progress as user fills
+  const fname = document.getElementById('f-name');
+  const fphone = document.getElementById('f-phone');
+  const femail = document.getElementById('f-email');
+  const progressCheck = () => {
+    const filled = [fname, fphone, femail].filter(x => x && x.value.trim().length > 2).length;
+    if (filled >= 2) {
+      if (stepText) stepText.textContent = 'Step 3 of 3';
+      if (formBar) formBar.style.width = '100%';
+    }
+  };
+  [fname, fphone, femail].forEach(el => el && el.addEventListener('input', progressCheck));
+
+  // Submit
+  const submit = document.getElementById('f-submit');
+  const formBody = document.getElementById('form-body');
+  const formSuccess = document.getElementById('form-success');
+  const successName = document.getElementById('success-name');
+  const successEmail = document.getElementById('success-email');
+
+  if (submit) {
+    submit.addEventListener('click', () => {
+      const name = fname.value.trim();
+      const phone = fphone.value.trim();
+      const email = femail.value.trim();
+      const emailOk = /^\S+@\S+\.\S+$/.test(email);
+      const phoneOk = /^[0-9 +\-()]{8,}$/.test(phone);
+
+      if (!name) { fname.focus(); fname.style.borderBottomColor = '#C97B5C'; return; }
+      if (!phoneOk) { fphone.focus(); fphone.style.borderBottomColor = '#C97B5C'; return; }
+      if (!emailOk) { femail.focus(); femail.style.borderBottomColor = '#C97B5C'; return; }
+
+      successName.textContent = name.split(' ')[0];
+      successEmail.textContent = email;
+      formBody.style.display = 'none';
+      formSuccess.classList.add('show');
+    });
+  }
+
+  // Soft active nav highlight
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const sections = ['audience','services','founder','method','trainings','faq'];
+  if ('IntersectionObserver' in window) {
+    const so = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const id = e.target.id;
+          navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    sections.forEach(id => { const el = document.getElementById(id); if (el) so.observe(el); });
+  }
+
+})();
+</script>
+
+</body>
+</html>
